@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="password-generator",
     version="1.0.0",
-    author="Левченко Иван",
+    author="Levchenko Ivan",
     author_email="levchenkoivan3007@gmail.com",
     description="Криптографически безопасный генератор паролей с CLI",
     long_description=long_description,
