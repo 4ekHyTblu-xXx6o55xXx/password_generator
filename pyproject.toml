@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "password_generator"
+version = "1.0.0"
+description = "Криптографически безопасный генератор паролей"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Ivan", email = "levchenkoivan3007@gmail.com"}
+]
