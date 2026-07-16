@@ -12,6 +12,16 @@ COLORS = {
 
 
 def color_text(text: str, color: str) -> str:
+    if sys.platform == "win32":
+        try:
+            import ctypes
+            kernel32 = ctypes.windll.kernel32
+            handle = kernel32.GetStdHandle(-11)
+            mode = ctypes.c_ulong()
+            kernel32.GetConsoleMode(handle, ctypes.byref(mode))
+            kernel32.SetConsoleMode(handle, mode.value | 0x0004)
+        except:
+            return text
     return f"{COLORS.get(color, '')}{text}{COLORS['reset']}"
 
 
