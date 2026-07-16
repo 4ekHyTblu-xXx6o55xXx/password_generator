@@ -17,5 +17,5 @@
 
 ```bash
 git clone https://github.com/4ekHyTblu-xXx6o55xXx/password_generator.git
-cd password-generator
+cd password_generator
 pip install -e .
