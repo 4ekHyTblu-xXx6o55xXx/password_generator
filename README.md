@@ -14,7 +14,7 @@
 ---
 
 ## 🎮 Использование
-# Базовый пароль (длина 16, все типы символов)
+### Базовый пароль (длина 16, все типы символов)
 ```bash
 pwdgen
 ```
@@ -24,10 +24,7 @@ pwdgen
 ## 🚀 Установка
 
 ```bash
-# Клонируем репозиторий
 git clone https://github.com/4ekHyTblu-xXx6o55xXx/password_generator.git
 cd password_generator
-
-# Устанавливаем пакет в режиме разработки (появится команда pwdgen)
 pip install -e .
 ```
