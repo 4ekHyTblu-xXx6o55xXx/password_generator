@@ -1,11 +1,4 @@
-# from password_generator import PasswordGenerator
-#
-# gen = PasswordGenerator(length=20)
-# print(gen.generate())
-from password_generator import PasswordGenerator
+from password_generator.cli import main
 
-gen = PasswordGenerator(length=20)
-pwd = gen.generate()
-print(f"Пароль: {pwd}")
-print(f"Энтропия: {gen.entropy(pwd):.1f} бит")
-print(f"Стойкость: {gen.strength_label(gen.entropy(pwd))}")
+if __name__ == "__main__":
+    main()
